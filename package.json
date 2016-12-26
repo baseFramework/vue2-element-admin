@@ -1,7 +1,7 @@
 {
   "name": "vue2-element-admin",
   "version": "1.0.0",
-  "description": "admin museui",
+  "description": "admin element",
   "author": "rahul.wu",
   "private": true,
   "scripts": {
@@ -16,9 +16,10 @@
     "leanengine": "^0.1.0",
     "path": "^0.12.7",
     "request": "^2.79.0",
-    "vue": "^2.0.1",
+    "element-ui": "^1.0.5",
+    "vue": "^2.1.0",
+    "vue-router": "^2.1.1",
     "vue-resource": "^1.0.3",
-    "vue-router": "^2.0.3",
     "vuex": "^2.0.0-rc.4",
     "vuex-router-sync": "^3.0.0"
   },

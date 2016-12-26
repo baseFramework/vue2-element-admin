@@ -1,18 +1,18 @@
 import Vue from 'vue'
-import App from './App'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 import VueRouter from 'vue-router'
-import configRouter from './routes'
 import store from './store'
 import {sync} from 'vuex-router-sync'
-import MuseUI from 'muse-ui'
-import 'muse-ui/dist/muse-ui.css'
+import routerMap from './router/router'
 
-Vue.use(MuseUI)   // use Muse-Ui  2.0.0-alpha.10
-Vue.use(VueRouter) //use vue-router
-const router = new VueRouter({routes: configRouter})
+Vue.use(VueRouter);
+Vue.use(ElementUI);
+
+const router = new VueRouter({routes: routerMap})
 sync(store, router)
-new Vue({
+
+const app = new Vue({
   router,
-  store,
-  render: h => h(App)
-}).$mount("#app")
+  store
+}).$mount('#app');
