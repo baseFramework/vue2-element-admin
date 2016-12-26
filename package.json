@@ -13,13 +13,14 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
+    "element-ui": "^1.0.5",
     "leanengine": "^0.1.0",
+    "nprogress": "^0.2.0",
     "path": "^0.12.7",
     "request": "^2.79.0",
-    "element-ui": "^1.0.5",
     "vue": "^2.1.0",
-    "vue-router": "^2.1.1",
     "vue-resource": "^1.0.3",
+    "vue-router": "^2.1.1",
     "vuex": "^2.0.0-rc.4",
     "vuex-router-sync": "^3.0.0"
   },

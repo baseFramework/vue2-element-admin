@@ -13,7 +13,7 @@
 .app_nav{
   position: relative;
   flex: 0 0 200px;
-  background: #EFF2F7;
+  background: #eee;
 }
 .app_right{
   flex: 1;
@@ -29,4 +29,5 @@
 .app_text{
   padding: 20px;
   width: 100%;
+  height: 600px;
 }
