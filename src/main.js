@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import store from './store'
 import {sync} from 'vuex-router-sync'
 import routerMap from './router/router'
+import '../lib/font-awesome-4.7.0/css/font-awesome.min.css'
 
 Vue.use(VueRouter);
 Vue.use(ElementUI);

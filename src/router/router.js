@@ -26,6 +26,6 @@ export default [
   },
   {
     path: '*',
-    redirect: '/dash/hello'
+    redirect: '/dash/index'
   }
 ]
