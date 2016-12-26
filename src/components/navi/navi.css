@@ -1,0 +1,8 @@
+.navi-wrap .el-submenu, .navi-wrap .el-menu-item{
+  width: 100%;
+  margin: 0;
+}
+
+.navi-wrap .el-menu{
+  background-color: #fff;
+}

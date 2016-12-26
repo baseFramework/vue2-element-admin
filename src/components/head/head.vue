@@ -14,38 +14,6 @@
 <script>
   require('./head.css')
   export default {
-    data() {
-      return {
-        options: [{
-          label: "test1",
-          value: 1
-        }, {
-          label: "test2",
-          value: 2
-        }, {
-          label: "test3",
-          value: 3
-        }, {
-          label: "test4",
-          value: 4
-        }, {
-          label: "test5",
-          value: 5
-        }, {
-          label: "test6",
-          value: 6
-        }, {
-          label: "test7",
-          value: 7
-        }, ],
-        value: 1
-
-      }
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    }
+    name:'head'
   }
 </script>

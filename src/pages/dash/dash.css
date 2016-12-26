@@ -1,0 +1,32 @@
+
+#app{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+}
+.app_content{
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+}
+.app_nav{
+  position: relative;
+  flex: 0 0 200px;
+  background: #EFF2F7;
+}
+.app_right{
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+
+}
+.breadcrumb{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.app_text{
+  padding: 20px;
+  width: 100%;
+}
