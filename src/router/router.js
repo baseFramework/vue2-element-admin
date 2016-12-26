@@ -1,10 +1,11 @@
 import hello from '../pages/hello/hello'
-import App from '../App';
+import dash from '../pages/dash/dash';
+import login from '../pages/login/login';
 
 export default [
   {
-    path: '/index',
-    component: App,
+    path: '/dash',
+    component: dash,
     children: [
       {
         path: 'hello',
@@ -13,7 +14,11 @@ export default [
     ]
   },
   {
+    path: '/login',
+    component: login,
+  },
+  {
     path: '*',
-    redirect: '/index/hello'
+    redirect: '/dash/hello'
   }
 ]
