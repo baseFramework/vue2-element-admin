@@ -6,3 +6,7 @@
 .navi-wrap .el-menu{
   background-color: #fff;
 }
+
+.navi-wrap{
+  border-right: 1px solid #efefef;
+}
