@@ -1,0 +1,45 @@
+.home-content{
+  padding:20px;
+  margin: auto 0;
+}
+.time {
+  font-size: 13px;
+  color: #999;
+}
+
+.bottom {
+  margin-top: 13px;
+  line-height: 12px;
+}
+
+.button {
+  padding: 0;
+  float: right;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.el-card{
+  margin: 6px;
+}
+
+.clearfix:after {
+  clear: both
+}
+
+h2{
+  font-weight: bolder;
+}
+
+.el-tooltip, .el-tooltip__rel {
+  width: 100%;
+}

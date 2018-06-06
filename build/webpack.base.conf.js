@@ -4,14 +4,11 @@ var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
 var env = process.env.NODE_ENV
-// check env & config/index.js to decide weither to enable CSS Sourcemaps for the
+// check env & config/index.js to decide whether to enable CSS source maps for the
 // various preprocessor loaders added to vue-loader at the end of this file
 var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
 var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
 var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
-var koutoSwiss        = require('kouto-swiss');
-var jeet              = require('jeet');
-var rupture           = require('rupture');
 
 module.exports = {
   entry: {
@@ -23,10 +20,10 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js', '.vue'],
+    extensions: ['', '.js', '.vue', '.json'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
-      'vue$': 'vue/dist/vue',
+      'vue$': 'vue/dist/vue.common.js',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components')
@@ -70,18 +67,11 @@ module.exports = {
     ]
   },
   vue: {
-    loaders: utils.cssLoaders({sourceMap: useCssSourceMap}),
+    loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
     postcss: [
       require('autoprefixer')({
         browsers: ['last 2 versions']
       })
     ]
-  },
-  stylus: {
-    use: [
-      koutoSwiss(),
-      rupture(),
-      jeet()
-    ],
   }
 }

@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var port = normalizePort(process.env.PORT || '6660');
+app.set('port', port);
+var http = require('http');
+var server = http.createServer(app);
+var models = require('../server/model');
+
+models.sequelize.sync().then(function() {
+  /**
+   * Listen on provided port, on all network interfaces.
+   */
+server.listen(port, function() {
+     console.log('[%s] Express server listening on port %d', app.get('env').toUpperCase(), app.get('port'));
+  });
+});
+
+
+
+
+  function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}

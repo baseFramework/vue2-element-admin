@@ -1,0 +1,17 @@
+.chead-wrap{
+  border-radius: 2px;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  background-color: #eff2f7;
+  display: inline-block;
+  width: 100%;
+}
+.header-title{
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0 20px;
+  line-height: 60px;
+  float: left;
+}

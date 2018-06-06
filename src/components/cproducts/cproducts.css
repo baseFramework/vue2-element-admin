@@ -1,0 +1,22 @@
+.cproducts-wrap{
+    margin: 10px 0;
+}
+
+.cproducts-wrap .item{
+    position: relative;
+    height: 80px;
+}
+.cproducts-wrap .img-left{
+    position: absolute;
+    left: 5px;
+}
+
+.cproducts-img{
+    width: 30px;
+    height: 30px;
+}
+
+.content-right{
+    padding-left: 70px;
+    text-align: left
+}

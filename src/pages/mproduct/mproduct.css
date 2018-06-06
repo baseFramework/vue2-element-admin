@@ -1,0 +1,18 @@
+.mproduct-content{
+    padding: 20px;
+}
+.mproduct-wrap .buttongroup{
+    position: absolute;
+    left: 20px;
+    top: 20px;  
+}
+.mproduct-wrap .tools{
+    height: 60px;
+    position: relative;
+}
+
+.mproduct-wrap .tools .el-pagination{
+    position: absolute;
+    right: 20px;
+    top: 20px;    
+}

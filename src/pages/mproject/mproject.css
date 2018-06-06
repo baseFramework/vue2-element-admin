@@ -1,0 +1,18 @@
+.mproject-content{
+    padding: 20px;
+}
+.mproject-wrap .buttongroup{
+    position: absolute;
+    left: 20px;
+    top: 20px;  
+}
+.mproject-wrap .tools{
+    height: 60px;
+    position: relative;
+}
+
+.mproject-wrap .tools .el-pagination{
+    position: absolute;
+    right: 20px;
+    top: 20px;    
+}

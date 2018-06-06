@@ -1,0 +1,22 @@
+.cprojects-wrap{
+    margin: 10px 0;
+}
+
+.cprojects-wrap .item{
+    position: relative;
+    height: 80px;
+}
+.cprojects-wrap .img-left{
+    position: absolute;
+    left: 5px;
+}
+
+.projects-img{
+    width: 30px;
+    height: 30px;
+}
+
+.content-right{
+    padding-left: 70px;
+    text-align: left
+}
